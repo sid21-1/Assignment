@@ -36,7 +36,6 @@ export default function PostPage({ params }: PostPageProps) {
         />
         <p>{post.author}</p>
       </div>
-
       <p className="text-lg text-gray-700 mb-6">{post.content}</p>
     </div>
   );
