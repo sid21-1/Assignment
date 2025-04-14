@@ -2,13 +2,7 @@
 import { posts } from "@/data/posts";
 import Image from "next/image";
 
-interface PostPageProps {
-  params: {
-    id: string;
-  };
-}
-
-export default function PostPage({ params }: PostPageProps) {
+export default function PostPage({ params }: { params: { id: string } }) {
   const post = posts.find((p) => p.id === parseInt(params.id));
 
   if (!post) {
